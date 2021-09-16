@@ -1,0 +1,17 @@
+{
+    "name": "henryvolkmer/asset-publisher",
+    "description": "if you cant utilize Webpack, then you can use this Poormans assets publisher.",
+    "minimum-stability": "stable",
+    "require": {
+    },
+    "require-dev": {
+        "symfony/config": "^5.6",
+        "symfony/dependency-injection": "^5.6",
+        "symfony/filesystem": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Henry\\AssetPublisherBundle\\": "src/"
+        }
+    }
+}
