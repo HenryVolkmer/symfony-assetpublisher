@@ -5,9 +5,10 @@
     "require": {
     },
     "require-dev": {
-        "symfony/config": "^5.6",
-        "symfony/dependency-injection": "^5.6",
-        "symfony/filesystem": "^5.6"
+        "symfony/http-kernel": "^5.3",
+        "symfony/config": "^5.3",
+        "symfony/dependency-injection": "^5.3",
+        "symfony/filesystem": "^5.3"
     },
     "autoload": {
         "psr-4": {
