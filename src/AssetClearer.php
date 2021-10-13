@@ -3,6 +3,8 @@
 namespace Henry\AssetPublisherBundle;
 
 use Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Filesystem\Exception\IOException;
 
 class AssetClearer implements CacheClearerInterface
 {
