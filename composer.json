@@ -1,5 +1,5 @@
 {
-    "name": "henryvolkmer/asset-publisher-bundle",
+    "name": "henryvolkmer/asset-publisher",
     "description": "if you cant utilize Webpack, then you can use this Poormans assets publisher.",
     "minimum-stability": "stable",
     "require": {
