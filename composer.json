@@ -3,10 +3,10 @@
     "description": "if you cant utilize Webpack, then you can use this Poormans assets publisher.",
     "minimum-stability": "stable",
     "require": {
-        "symfony/http-kernel": ">= 5.3 < 6",
-        "symfony/config": ">= 5.3 < 6",
-        "symfony/dependency-injection": ">= 5.3 < 6",
-        "symfony/filesystem": ">= 5.3 < 6"
+        "symfony/http-kernel": ">= 5.4 || ^6.1",
+        "symfony/config": ">= 5.4 || ^6.1",
+        "symfony/dependency-injection": ">= 5.4 || ^6.1",
+        "symfony/filesystem": ">= 5.4 || ^6.1"
     },
     "autoload": {
         "psr-4": {
