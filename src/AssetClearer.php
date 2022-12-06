@@ -20,9 +20,12 @@ class AssetClearer implements CacheClearerInterface
         $this->assets = $assets;
     }
 
-    public function addAssets(array $assets)
+    public function addSources(array $sources)
     {
-        $this->assets = array_merge($this->assets, $assets);
+        if (!isset($this->assets['sources'])) {
+            $this->assets['sources'] = [];
+        }
+        $this->assets['sources'] = array_merge($this->assets['sources'], $sources);
     }
 
     private function composeAssets($assetFolder, array $sources=[])
