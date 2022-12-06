@@ -8,7 +8,7 @@ use Symfony\Component\Filesystem\Exception\IOException;
 
 class AssetClearer implements CacheClearerInterface
 {
-    private array $assets;
+    private array $assets = [];
 
     public function clear(string $cacheDirectory)
     {
@@ -18,6 +18,11 @@ class AssetClearer implements CacheClearerInterface
     public function setAssets(array $assets)
     {
         $this->assets = $assets;
+    }
+
+    public function addAssets(array $assets)
+    {
+        $this->assets = array_merge($this->assets, $assets);
     }
 
     private function composeAssets($assetFolder, array $sources=[])
