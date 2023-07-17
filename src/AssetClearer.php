@@ -5,6 +5,7 @@ namespace Henry\AssetPublisherBundle;
 use Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOException;
+use array_key_exists;
 
 class AssetClearer implements CacheClearerInterface
 {
@@ -12,7 +13,9 @@ class AssetClearer implements CacheClearerInterface
 
     public function clear(string $cacheDirectory)
     {
-        $this->composeAssets($this->assets['publicpath'], $this->assets['sources']);
+        if (array_key_exists('publicpath', $this->assets) && array_key_exists('sources', $this->assets)) {
+            $this->composeAssets($this->assets['publicpath'], $this->assets['sources']);
+        }
     }
 
     public function setAssets(array $assets)
