@@ -1,12 +1,12 @@
 {
     "name": "henryvolkmer/asset-publisher",
-    "description": "if you cant utilize Webpack, then you can use this Poormans assets publisher.",
+    "description": "if you cant utilize a npm build pipeline, then you can use this Poormans assets publisher.",
     "minimum-stability": "stable",
     "require": {
-        "symfony/http-kernel": ">= 5.4 || ^6.1",
-        "symfony/config": ">= 5.4 || ^6.1",
-        "symfony/dependency-injection": ">= 5.4 || ^6.1",
-        "symfony/filesystem": ">= 5.4 || ^6.1"
+        "symfony/http-kernel": ">= 5.4 || ^6.1 || ^7.4",
+        "symfony/config": ">= 5.4 || ^6.1  || ^7.4",
+        "symfony/dependency-injection": ">= 5.4 || ^6.1 || ^7.4",
+        "symfony/filesystem": ">= 5.4 || ^6.1 || ^7.4"
     },
     "autoload": {
         "psr-4": {
