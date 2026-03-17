@@ -11,7 +11,7 @@ class AssetClearer implements CacheClearerInterface
 {
     private array $assets = [];
 
-    public function clear(string $cacheDirectory)
+    public function clear(string $cacheDirectory): void
     {
         if (array_key_exists('publicpath', $this->assets) && array_key_exists('sources', $this->assets)) {
             $this->composeAssets($this->assets['publicpath'], $this->assets['sources']);
@@ -31,7 +31,7 @@ class AssetClearer implements CacheClearerInterface
         $this->assets['sources'] = array_merge($this->assets['sources'], $sources);
     }
 
-    private function composeAssets($assetFolder, array $sources=[])
+    private function composeAssets($assetFolder, array $sources = [])
     {
         $filesystem = new Filesystem();
         $filesystem->remove([$assetFolder]);
